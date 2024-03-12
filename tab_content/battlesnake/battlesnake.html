@@ -5,42 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>battle snake Description</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cfd0eb;
+            text-align: center; /* Center align all text */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f1eef7;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Reset text alignment for container */
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center; /* Center align headers */
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px; /* Add some spacing between paragraphs */
+        }
+
+        .custom-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left; /* Reset text alignment for lists */
+        }
+
         video {
-            border-radius: 10px; /* Adjust the value to change the roundness of the corners */
-            border: 2px solid #ccc; /* Border color and width */
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow effect */
-            width: 120%; /* Make the video responsive */
-            max-width: 210px; /* Limit the maximum width of the video */
-            max-height: 400px; /* Limit the maximum width of the video */
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 200px;
             display: block;
-            margin: 0 auto; /* Center the video horizontally */
+            margin: 20px auto;
         }
+
         .githubLink {
-            text-align: center; /* Center the text inside the div horizontally */
-            margin-top: 20px; /* Adjust as needed */
+            text-align: center;
+            margin-top: 20px;
         }
+
+        .githubLink a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .githubLink a:hover {
+            text-decoration: underline;
+        }
+    </style>
     </style>
 </head>
 <body>
-    <div class="description">
-        <p>Snake</p>
-        <h2>Key Features:</h2>
-        <ul>
+    <div class="container">
+        <h1>Snake</h1>
+        <p>
+            This project aims to improve cribbage players' skills by providing recommendations on which cards to keep and discard to maximize scoring potential.
+        </p>
+        <p>
+            Developed to enhance your cribbage playing experience, this project offers a user-friendly interface where players can input their hand's six cards and receive instant recommendations.
+        </p>
+        <h2>Technical Skills Developed:</h2>
+        <ul class = 'custom-list'>
             <li>-snake.</li>
             <li>-battlelele</li>
            
         </ul>
-        <br>
-        <p>Through effective collaboration and dedication, our team successfully delivered a fun and engaging Air Hockey game, demonstrating our passion for game development and software engineering.</p>
-    </div>
-    <br>
-    <video controls>
+        <h2>Example Usage:</h2>
+        <video controls>
         <source src="tab_content/battlesnake/battlesnakeVideo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <br>
-    <div class = 'githubLink'>
-        <p>If you want to explore the code, check out my GitHub repository <a href="https://github.com/QuinnWebster/airHocky" target="_blank">here</a>.</p>
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <div class = 'githubLink'>
+            <p>If you want to explore the code, check out my GitHub repository <a href="https://github.com/QuinnWebster/airHocky" target="_blank">here</a>.</p>
+        </div>
     </div>
     </body>
 </html>

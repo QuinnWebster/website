@@ -54,7 +54,6 @@ function changeLink() {
       title.textContent = "Home PAgeee";
 
 
-
       const allMainContent = document.querySelector(".allMainContent");
       allMainContent.style.display = 'block';
       
@@ -119,6 +118,7 @@ function changeLink() {
 
               // Update the title
               title.textContent = linkText;
+
 
 
               const allMainContent = document.querySelectorAll(".allMainContent");
