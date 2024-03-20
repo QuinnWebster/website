@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/e40aa81741.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+       
+       .link {
+          position: relative;
+          text-align: center;
+          display: inline-block;
+          margin-bottom: 40px; /* Adjust spacing between icons */
+        }
+
+        .link span {
+          display: none;
+          transition: all 0.3s ease-in-out;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: white;
+          padding: 5px 10px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .link:hover span {
+          display: block;
+        }
+
+        .skills-info {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+        }
+
+        .skills-info i {
+          font-size: 8px;
+          color: #333;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="skills-container">
+  <div class="skills-info">
+    <a class="link java">
+      <i class="fab fa-2x fa-java"></i>
+      <span>Java</span>
+    </a>
+    <a class="link python">
+        <i class="fab fa-2x fa-python"></i>
+        <span>Python</span>
+    </a>
+    <a class="link github">
+        <i class="fab fa-2x fa-github"></i>
+        <span>GitHub</span>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
