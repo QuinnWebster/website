@@ -8,6 +8,106 @@
   <title>Sidebar Menu</title>
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://kit.fontawesome.com/e40aa81741.js" crossorigin="anonymous"></script>  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #cfd0eb;
+        text-align: center; /* Center align all text */
+    }
+
+    .allMainContent {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f1eef7;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: left; /* Reset text alignment for container */
+    }
+
+    h1, h2 {
+        color: #333;
+        text-align: center; /* Center align headers */
+    }
+
+    p {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 20px; /* Add some spacing between paragraphs */
+    }
+
+    .custom-list {
+        list-style-type: disc;
+        padding-left: 20px;
+        text-align: left; /* Reset text alignment for lists */
+    }
+
+    .allMainContent {
+        text-align: center; /* Center aligns the content within the div */
+    }
+
+    .allMainContent img {
+        display: block; /* Ensures the image is a block element */
+        margin: 0 auto; /* Centers the image horizontally */
+        border-radius: 10px; /* Rounds the corners of the image */
+    }
+
+    .githubLink {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .githubLink a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .githubLink a:hover {
+        text-decoration: underline;
+    }
+
+
+
+
+
+    .skills-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .skills-info i {
+      font-size: 28px;
+      color: #333;
+    }
+
+    .link span {
+      display: none;
+      transition: all 0.3s ease-in-out;
+      position: absolute;
+      background-color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      font-size: 12px;
+      transform: translateX(-22%);
+
+    }
+
+    .link:hover span {
+        display: block;
+    }
+
+
+
+  </style>
+
+
 </head>
 
 <body>
@@ -104,10 +204,6 @@
           <span>Password Checker</span>
           <span>Project 2</span>
          
-
-
-
-
         </div>
       </ul>
     </div>
@@ -126,43 +222,113 @@
         </a>
       </div>
     </div>
-    
-
-
   </nav>
 
 
   <main>
-    <h1>Home Page</h1>
-    <p class="text">
-      Hey! My name is Quinn Webster and I am a second year software enginering student at the University of Victoria. 
-    </p>
+
+    <div class = 'top-box'></div>
+    
+      <h1>Quinn Webster</h1>
+
+    </div>
+
+
+    <p class="text"></p>
+    
 
     <div class = 'allMainContent'>
+
+      <h1>ME</h1>
+
       <img src="user-img.jpg" alt="Quinn Webster Photo">
-      <p class = 'text2'>
-      I am currently in my second year of studies and am looking to expand my knowledge in the field of computer science. I am interested in web development, software development, and machine learning. I am currently working on a few projects that I am excited to share with you.
-      </p>
+
       <br>
+
+      <p class="text">
+        I am currently in my second year of studies and am looking to expand my knowledge in the field of computer science. I am interested in web development, software development, and machine learning. I am currently working on a few projects that I am excited to share with you.
+      </p>
+
+
       <p>
         When I'm not in school I enjoy biking, skiing and working out. I also enjoy working on personal projects
       </p>
-      <br>
       <p>
         I built this website to further my knowledge in web development and to showcase my projects.
         This website was built fully from scratch using HTML, CSS, and Javascript without the use of any templates. I designed the website to be responsive and to have a clean and modern look.
       </p>
-      <br>
       <p>
         Feel free to check out my projects and learn more about me!
       </p>
       <br>
-      <p>Check out my resume <a href="tab_content/home/Resume, Quinn Webster.pdf" class="pdf-link" target="_blank">here</a></p>
+      
+
+      <br>
+
+
+      <div class = "skills-container">
+
+        <p>Skills</p>
+
+        <div class = "skills-info">
+
+          <a class="link html">
+            <i class="fab fa-2x fa-html5"></i>
+            <span>html</span>
+          </a>
+          <a class="link css">
+              <i class="fab fa-2x fa-css3-alt"></i>
+              <span>CSS</span>
+          </a>
+          <a class="link javascript">
+            <i class="fab fa-2x fa-js"></i>
+            <span>Javascript</span>
+        </a>
+          <a class="link c">
+              <i class="fab fa-2x fa-c"></i>
+              <span>c</span>
+          </a> 
+          <a class="link java">
+            <i class="fab fa-2x fa-java"></i>
+            <span>Java</span>
+          </a>
+          <a class="link python">
+            <i class="fab fa-2x fa-python"></i>
+            <span>Python</span>
+          </a>
+          <a class="link linux">
+            <i class="fab fa-2x fa-linux"></i>
+            <span>Linux</span>
+          </a>
+          <a class="link linux">
+            <i class="fab fa-2x fa-github"></i>
+            <span>Github</span>
+          </a>
+          <a class="link windows">
+            <i class="fab fa-2x fa-windows"></i>
+            <span>Windows</span>
+          </a>
+
+          
+        </div>
+
+      </div>
+
+      <br>
+
+      <p>
+        Check out my resume <a href="tab_content/home/Resume, Quinn Webster.pdf" class="pdf-link" target="_blank">here</a>
+      </p>
+
+
     </div>
+
+    
+
    
   </main>
 
-  <script src="app2.js"></script>
+  <script src="app.js"></script>
   
   
 </body>

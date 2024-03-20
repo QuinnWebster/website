@@ -51,7 +51,7 @@ function changeLink() {
     if (linkText === "Home") {
       reloadOriginalContent();
       activeIndex = this.dataset.active;
-      title.textContent = "Home PAgeee";
+      title.textContent = "Quinn Webster";
 
 
       const allMainContent = document.querySelector(".allMainContent");
@@ -68,7 +68,7 @@ function changeLink() {
           mainText.innerHTML = html;
 
           // Update the title
-          title.textContent = linkText;
+          title.textContent = 'Quinn Webster';
 
 
           const allMainContent = document.querySelectorAll(".allMainContent");
@@ -92,7 +92,7 @@ function changeLink() {
           mainText.innerHTML = html;
 
           // Update the title
-          title.textContent = linkText;
+          title.textContent = 'Quinn Webster';
 
 
           const allMainContent = document.querySelectorAll(".allMainContent");
@@ -117,7 +117,7 @@ function changeLink() {
               mainText.innerHTML = html;
 
               // Update the title
-              title.textContent = linkText;
+              title.textContent = 'Quinn Webster';
 
 
 
@@ -142,7 +142,7 @@ function changeLink() {
               mainText.innerHTML = html;
 
               // Update the title
-              title.textContent = linkText;
+              title.textContent = 'Quinn Webster';
 
 
               const allMainContent = document.querySelectorAll(".allMainContent");
@@ -160,10 +160,10 @@ function changeLink() {
       moveActiveTab();
   }else if (linkText === "Password Checker") {
       mainText.textContent = `Password Checker, add description here`;
-      title.textContent = "Password Checker";
+      title.textContent = "Quinn Webster";
   }else if (linkText === "Project 2") {
     mainText.textContent = `Project 2, add description here`;
-    title.textContent = "Project 2";
+    title.textContent = "Quinn Webster";
   }
 
 
