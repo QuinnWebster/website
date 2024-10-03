@@ -1,0 +1,170 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Sidebar</title>
+  </head>
+  <body>
+
+    
+    
+    <div class="container">
+      <div class="sidebar">
+        <div class="menu-btn">
+          <i class="ph-bold ph-caret-left"></i>
+        </div>
+        <div class="head">
+          <div class="user-img">
+            <img src="user.jpg" />
+          </div>
+          <div class="user-details">
+            <p class="title">Quinns Website</p>
+            <p class="name">Quinn Webster</p>
+          </div>
+        </div>
+
+        <div class="nav">
+          <div class="menu">
+            <p class="title">Skibidi</p>
+            <ul>
+
+              <li>
+                <a href="#" onclick="loadPage('tab_content/about_me/about_me.html')">
+                  <i class="icon ph-bold ph-house-simple"></i>
+                  <span class="text">About Me</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" onclick="loadPage('tab_content/rebuild/rebuild.html')">
+                  <i class="icon ph-bold ph-user"></i>
+                  <span class="text">ReBuild</span>
+                  <i class="arrow ph-bold ph-caret-down"></i>
+                </a>
+                
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#" onclick="loadPage('tab_content/rebuild/pdf_scraper/pdf_scraper.html'); event.stopPropagation();">
+                      <span class="text">PDF Scraper</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="loadPage('tab_content/rebuild/nzn/nzn.html'); event.stopPropagation();">
+                      <span class="text">NZN</span>
+                    </a>
+                  </li>
+                </ul>  
+
+              </li>
+              <li>
+                <a href="#" onclick="loadPage('tab_content/inspire/inspire.html')">
+                    <i class="icon ph-bold ph-user"></i>
+                    <span class="text">Inspire</span>
+                    <i class="arrow ph-bold ph-caret-down"></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                      <a href="#" onclick="loadPage('tab_content/inspire/main/main.html'); event.stopPropagation();">
+                        <span class="text">Main Project</span>
+                      </a>
+                    </li>
+                </ul>
+                
+              </li>
+              <li>
+                <a href="#" onclick="loadPage('tab_content/first_year_projects/first_year.html')">
+                    <i class="icon ph-bold ph-user"></i>
+                    <span class="text">First_Year</span>
+                    <i class="arrow ph-bold ph-caret-down"></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                      <a href="#" onclick="loadPage('tab_content/first_year_projects/cribbage/cribbage.html'); event.stopPropagation();">
+                        <span class="text">Cribbage_Optimizer</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" onclick="loadPage('tab_content/first_year_projects/battlesnake/battlesnake.html'); event.stopPropagation();">
+                        <span class="text">Autonomous_Battle_Snake</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" onclick="loadPage('tab_content/first_year_projects/robot/robot.html'); event.stopPropagation();">
+                        <span class="text">Autonomous_Robot</span>
+                      </a>
+                    </li>
+                </ul>
+                
+              </li>
+
+              <li>
+                <a href="#" onclick="loadPage('tab_content/second_year_projects/second_year.html')">
+                    <i class="icon ph-bold ph-user"></i>
+                    <span class="text">Second_Year</span>
+                    <i class="arrow ph-bold ph-caret-down"></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                      <a href="#" onclick="loadPage('tab_content/second_year_projects/air_hockey/air_hockey.html'); event.stopPropagation();">
+                        <span class="text">Air_Hockey</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" onclick="loadPage('tab_content/second_year_projects/newspaper/newspaper.html'); event.stopPropagation();">
+                        <span class="text">Newpaper_Scraper</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" onclick="loadPage('tab_content/second_year_projects/message/message.html'); event.stopPropagation();">
+                        <span class="text">Message</span>
+                      </a>
+                    </li>
+                </ul>
+                
+              </li>
+
+              <li>
+                <a href="#" onclick="loadPage('tab_content/third_year_projects/third_year.html')">
+                    <i class="icon ph-bold ph-user"></i>
+                    <span class="text">Third_Year</span>
+                    <i class="arrow ph-bold ph-caret-down"></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                      <a href="#" onclick="loadPage('tab_content/third_year_projects/ai/ai.html'); event.stopPropagation();">
+                        <span class="text">AI_Project</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" onclick="loadPage('tab_content/third_year_projects/ml/ml.html'); event.stopPropagation();">
+                        <span class="text">Machine_Learning</span>
+                      </a>
+                    </li>
+                </ul>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+      <iframe id="main-content" src="tab_content/about_me/about_me.html" frameborder="0" style="width:100%; height: calc(100vh - 50px);"></iframe>
+
+    </div>
+
+    
+   
+          
+    <script>
+   function loadPage(page) {
+      document.getElementById('main-content').src = page;
+    }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html> 
