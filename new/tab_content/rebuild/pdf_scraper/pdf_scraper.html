@@ -67,7 +67,47 @@
 <body>
     <div class="container">
         <h1>PDF scraper</h1>
-        
+
+        <p>
+            During my internship, I was tasked with designing and developing a tool to extract and organize data from energy compliance report PDFs submitted to municipalites across British Columbia.
+            These reports contain important information about energy information for new buildings and retrofits.
+            My role was to create an automated pipeline to extract data from these reports and organize it into an Excel database.
+            This was a unqiue opportunity, as I was given full freedom to design and implement the tool as I saw fit.
+        </p>
+        <p>
+            I started by exploring different libraries and tools that could help me extract text and data from PDFs. However, there were four different revisions of the reports, and amongts those revisions,
+            the reports were not standardized, and the data was not always in the same location or format. This made it difficult to extract the data using traditional methods.
+        </p>
+        <p>
+            My first prototype involved converting the PDFs to images and using Optical Character Recognition (OCR) to extract the text from the images into a text file.
+            I then would search the text file for specific keywords and extract the data around those keywords. This method worked decently well for the first revision; however, it was somewhat inacurate.
+            Also, this appraoch of finding key words was not effective for the other revisions of the reports due to complicated tables and layouts.
+        </p>
+        <p>
+            My second prototype involved converting the PDFs to images, and then using a dynamic zonal OCR tool to extract the data from specific regions of the images.
+            This approach worked well because across each revision, allthough the size and spacing changed slightly, the data was in the same location corresponding to the PDFs dimensions.
+
+            I structured the project into three main parts:
+
+        </p>
+
+        <li class="custom-list">
+            <ul>
+                PDF Preprocessing: Converted PDFs into images and categorized them based on the revision.
+            </ul>
+            <ul>
+                mage Preparation: Cropped the images to focus on relevant content and sorted them by report type.
+            </ul>      
+            <ul>
+                Data Extraction: Used OCR to extract text from the images and export it into Excel sheets.
+            </ul> 
+        </li>
+
+        <p>
+            This project was a blend of Python programming, OCR integration, and data structuring, and it provided valuable insights into automating complex data extraction processes from unstructured formats like PDFs. The end result was a highly organized system that could process batches of compliance reports and deliver structured, actionable data for future analysis.
+
+Working on this tool deepened my understanding of data pipelines, OCR libraries, and how to handle varying document formats programmatically, all while contributing to a meaningful project aimed at improving energy efficiency policy in British Columbia.
+        </p>
         </video>
         <div class="githubLink">
             <p>If you want to explore the code, check out my GitHub repository <a href="https://github.com/QuinnWebster/airHocky" target="_blank">here</a>.</p>
